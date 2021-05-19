@@ -1,20 +1,18 @@
-
-
-
-    <div class="content-section">
-      <form method="Post">
-
-        <fieldset class = "form-group">
-          <legend class ="border-bottom mb-4"><b> Log In </b></legend>
-
-        </fieldset>
-        <div class="form-group">
-          <button class="btn btn-outline-info" type="submit"> Log In </button>
-        </div>
-      </form>
-      <div class="border-top pt-3">
-        <small class = "text-muted">
-          <b><i>Need An Account? </i></b><a class="ml-4" href="{% url 'registration' %}"> Register </a>
-        </small>
-      </div>
+<div class="content-section">
+  <form method="Post">
+    {% csrf_token %}
+    <fieldset class="form-group">
+      <legend class="border-bottom mb-4"><b>Login</b></legend>
+      {{ form }}
+    </fieldset>
+    <div class="form-group">
+      <button class="btn btn-outline-info" type="submit">Log In</button>
     </div>
+  </form>
+  <div class="border-top pt-3">
+    <small class="text-muted">
+      <b><i>Need An Account? </i></b
+      ><a class="ml-4" href="{% url 'registration' %}"> Register </a>
+    </small>
+  </div>
+</div>
