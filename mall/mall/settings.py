@@ -130,5 +130,5 @@ STATIC_URL = '/static/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-LOGIN_REDIRECT_URL = 'mall-home'
+LOGIN_REDIRECT_URL = 'shop-home'
 LOGIN_URL = 'login'
